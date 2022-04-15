@@ -1,0 +1,111 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+workspace 'PixaBay.xcworkspace'
+use_frameworks!
+
+def networkPods
+  pod 'SDWebImage'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+end
+
+def iOSPods
+  pod 'AJMessage'
+  pod 'RxDataSources'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxSwiftExt'
+  pod 'SDWebImage'
+  pod 'SVProgressHUD'
+end
+
+#MARK: MainApp
+target 'PixaBayApp' do
+  project 'PixaBayApp.xcodeproj'
+  iOSPods
+  pod "Resolver"
+end
+target 'PixaBayAppTests' do
+  project 'PixaBayApp.xcodeproj'
+  iOSPods
+  pod "RxBlocking"
+end
+
+#MARK: Network
+target 'Network' do
+  networkPods
+  target 'NetworkTests' do
+    pod 'RxBlocking'
+    networkPods
+  end
+end
+
+target 'PixaBayAppSnapshotsTests' do
+  iOSPods
+end
+
+#MARK: SharedUI
+target 'SharedUI' do
+  networkPods
+  pod 'AJMessage'
+  iOSPods
+end
+
+#MARK: Features
+
+#MARK: Registration
+
+target 'Registration' do
+  project 'Features/Registration/Registration.xcodeproj'
+  iOSPods
+end
+
+target 'RegistrationPresentation' do
+  project 'Features/Registration/Registration.xcodeproj'
+  iOSPods
+  target 'RegistrationPresentationTests' do
+    iOSPods
+  end
+end
+
+target 'RegistrationNetwork' do
+  project 'Features/Registration/Registration.xcodeproj'
+  iOSPods
+  target 'RegistrationNetworkTests' do
+  end
+  
+end
+
+
+#MARK: Home
+target 'Home' do
+  project 'Features/Home/Home.xcodeproj'
+  iOSPods
+end
+
+target 'HomePresentation' do
+  project 'Features/Home/Home.xcodeproj'
+  iOSPods
+  target 'HomePresentationTests' do
+    iOSPods
+  end
+  target 'HomeNetwork' do
+    iOSPods
+  end
+end
+
+
+#MARK: Home Details
+target 'HomeDetails' do
+  project 'Features/HomeDetails/HomeDetails.xcodeproj'
+  iOSPods
+end
+
+target 'HomeDetailsPresentation' do
+  project 'Features/HomeDetails/HomeDetails.xcodeproj'
+  iOSPods
+  target 'HomeDetailsPresentationTests' do
+    iOSPods
+  end
+end

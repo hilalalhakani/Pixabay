@@ -1,0 +1,6 @@
+framework module Pods_HomePresentation_HomeNetwork {
+  umbrella header "Pods-HomePresentation-HomeNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

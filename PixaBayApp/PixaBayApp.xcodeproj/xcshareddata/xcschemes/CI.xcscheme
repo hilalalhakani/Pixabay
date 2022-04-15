@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1320"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D5220DC27D560D3008D5930"
+               BuildableName = "PixaBayAppTests.xctest"
+               BlueprintName = "PixaBayAppTests"
+               ReferencedContainer = "container:PixaBayApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D0D5C5027F38E670015A818"
+               BuildableName = "HomeNetworkTests.xctest"
+               BlueprintName = "HomeNetworkTests"
+               ReferencedContainer = "container:Features/Home/Home.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D0D5C8B27F38EA20015A818"
+               BuildableName = "HomePresentationTests.xctest"
+               BlueprintName = "HomePresentationTests"
+               ReferencedContainer = "container:Features/Home/Home.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5DB8EEAA280458E6003A1F70"
+               BuildableName = "HomeDetailsPresentationTests.xctest"
+               BlueprintName = "HomeDetailsPresentationTests"
+               ReferencedContainer = "container:Features/HomeDetails/HomeDetails.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D0D5AF427F368B20015A818"
+               BuildableName = "HomeDetailsTests.xctest"
+               BlueprintName = "HomeDetailsTests"
+               ReferencedContainer = "container:Features/HomeDetails/HomeDetails.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D0D5E6727F9C5EB0015A818"
+               BuildableName = "NetworkTests.xctest"
+               BlueprintName = "NetworkTests"
+               ReferencedContainer = "container:PixaBayApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D0D5BE427F3898A0015A818"
+               BuildableName = "RegistrationNetworkTests.xctest"
+               BlueprintName = "RegistrationNetworkTests"
+               ReferencedContainer = "container:Features/Registration/Registration.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D0D5C2827F38B260015A818"
+               BuildableName = "RegistrationPresentationTests.xctest"
+               BlueprintName = "RegistrationPresentationTests"
+               ReferencedContainer = "container:Features/Registration/Registration.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D5220DC27D560D3008D5930"
+               BuildableName = "PixaBayAppTests.xctest"
+               BlueprintName = "PixaBayAppTests"
+               ReferencedContainer = "container:PixaBayApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D0D5C5027F38E670015A818"
+               BuildableName = "HomeNetworkTests.xctest"
+               BlueprintName = "HomeNetworkTests"
+               ReferencedContainer = "container:Features/Home/Home.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D0D5C8B27F38EA20015A818"
+               BuildableName = "HomePresentationTests.xctest"
+               BlueprintName = "HomePresentationTests"
+               ReferencedContainer = "container:Features/Home/Home.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5DB8EEAA280458E6003A1F70"
+               BuildableName = "HomeDetailsPresentationTests.xctest"
+               BlueprintName = "HomeDetailsPresentationTests"
+               ReferencedContainer = "container:Features/HomeDetails/HomeDetails.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D0D5AF427F368B20015A818"
+               BuildableName = "HomeDetailsTests.xctest"
+               BlueprintName = "HomeDetailsTests"
+               ReferencedContainer = "container:Features/HomeDetails/HomeDetails.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D0D5E6727F9C5EB0015A818"
+               BuildableName = "NetworkTests.xctest"
+               BlueprintName = "NetworkTests"
+               ReferencedContainer = "container:PixaBayApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D0D5BE427F3898A0015A818"
+               BuildableName = "RegistrationNetworkTests.xctest"
+               BlueprintName = "RegistrationNetworkTests"
+               ReferencedContainer = "container:Features/Registration/Registration.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D0D5C2827F38B260015A818"
+               BuildableName = "RegistrationPresentationTests.xctest"
+               BlueprintName = "RegistrationPresentationTests"
+               ReferencedContainer = "container:Features/Registration/Registration.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5DB3CEA92809797400BDA33B"
+               BuildableName = "PixaBayAppSnapshotsTests.xctest"
+               BlueprintName = "PixaBayAppSnapshotsTests"
+               ReferencedContainer = "container:PixaBayApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

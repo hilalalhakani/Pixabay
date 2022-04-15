@@ -1,0 +1,6 @@
+framework module Pods_RegistrationNetwork {
+  umbrella header "Pods-RegistrationNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

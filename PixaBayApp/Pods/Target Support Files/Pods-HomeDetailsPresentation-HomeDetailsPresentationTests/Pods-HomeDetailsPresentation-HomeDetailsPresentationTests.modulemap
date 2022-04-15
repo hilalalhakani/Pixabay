@@ -1,0 +1,6 @@
+framework module Pods_HomeDetailsPresentation_HomeDetailsPresentationTests {
+  umbrella header "Pods-HomeDetailsPresentation-HomeDetailsPresentationTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
