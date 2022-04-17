@@ -19,12 +19,8 @@
 		5D0D5C2A27F38B260015A818 /* RegistrationPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5C2227F38B260015A818 /* RegistrationPresentation.framework */; };
 		5D0D5C3527F38B260015A818 /* RegistrationPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5C2227F38B260015A818 /* RegistrationPresentation.framework */; };
 		5D0D5C3627F38B260015A818 /* RegistrationPresentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5C2227F38B260015A818 /* RegistrationPresentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D0D5D1F27F398810015A818 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5D1E27F398810015A818 /* Network.framework */; };
-		5D0D5D2027F398810015A818 /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5D1E27F398810015A818 /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D0D5D5827F399A70015A818 /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5D5727F399A70015A818 /* SharedUI.framework */; };
 		5D0D5D5927F399A70015A818 /* SharedUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5D5727F399A70015A818 /* SharedUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D0D5D5B27F399C10015A818 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5D5A27F399C10015A818 /* Network.framework */; };
-		5D0D5D5C27F399C10015A818 /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5D5A27F399C10015A818 /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D0D5D9527F49AF00015A818 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5B2027F3691E0015A818 /* RegistrationViewModel.swift */; };
 		5D0D5D9627F49B060015A818 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5B2527F3691E0015A818 /* LoginViewController.swift */; };
 		5D0D5D9B27F49C0E0015A818 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5B2327F3691E0015A818 /* LoginViewModel.swift */; };
@@ -47,22 +43,31 @@
 		5D0D5E5827F9C4E60015A818 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5A5427F3684D0015A818 /* SceneDelegate.swift */; };
 		5D0D5E5927F9C4EA0015A818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D5A5B27F3684F0015A818 /* Assets.xcassets */; };
 		5D0D5E5A27F9C4EE0015A818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D5A5D27F3684F0015A818 /* LaunchScreen.storyboard */; };
-		5D0D5ECC27F9C80D0015A818 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5ECB27F9C80D0015A818 /* Network.framework */; };
-		5D0D5ECD27F9C80D0015A818 /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5ECB27F9C80D0015A818 /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D0D5EE227F9CA090015A818 /* LoginUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5EDB27F9CA090015A818 /* LoginUIIntegrationTests.swift */; };
-		5D0D5EE527F9CA090015A818 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5EDC27F9CA090015A818 /* LoginViewModelTests.swift */; };
-		5D0D5EE627F9CA090015A818 /* RegistrationUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5EE127F9CA090015A818 /* RegistrationUIIntegrationTests.swift */; };
-		5D0D5F0827F9CB3A0015A818 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5F0227F9CB370015A818 /* SharedTestHelpers.swift */; };
-		5D0D5F0927F9CB3A0015A818 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5F0327F9CB370015A818 /* URLProtocolStub.swift */; };
-		5D0D5F0A27F9CB3A0015A818 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5F0427F9CB370015A818 /* XCTestCase+MemoryLeakTracking.swift */; };
-		5D0D5F0B27F9CB3A0015A818 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5F0527F9CB370015A818 /* UIImage+TestHelpers.swift */; };
-		5D0D5F0C27F9CB3A0015A818 /* StateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5F0627F9CB370015A818 /* StateSpy.swift */; };
-		5D0D5F0D27F9CB3A0015A818 /* UIControl+simulateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5F0727F9CB370015A818 /* UIControl+simulateEvent.swift */; };
+		5D57E6C7280BFA650052185F /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D57E6C6280BFA650052185F /* Networking.framework */; };
+		5D57E6DC280BFDBA0052185F /* RegistrationUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6D7280BFDBA0052185F /* RegistrationUIIntegrationTests.swift */; };
+		5D57E6DD280BFDBA0052185F /* RegistrationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6D8280BFDBA0052185F /* RegistrationViewModelTests.swift */; };
+		5D57E6DE280BFDBA0052185F /* LoginUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6DA280BFDBA0052185F /* LoginUIIntegrationTests.swift */; };
+		5D57E6DF280BFDBA0052185F /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6DB280BFDBA0052185F /* LoginViewModelTests.swift */; };
+		5D57E6F1280BFDFC0052185F /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6EE280BFDFC0052185F /* XCTestCase+MemoryLeakTracking.swift */; };
+		5D57E6F2280BFDFC0052185F /* ImageDownloaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6ED280BFDFC0052185F /* ImageDownloaderStub.swift */; };
+		5D57E6F3280BFDFC0052185F /* UIView+enforceLayoutCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6E1280BFDFC0052185F /* UIView+enforceLayoutCycle.swift */; };
+		5D57E6F4280BFDFC0052185F /* PixaBayRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6F0280BFDFC0052185F /* PixaBayRepositoryStub.swift */; };
+		5D57E6F5280BFDFC0052185F /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6EA280BFDFC0052185F /* UIImage+TestHelpers.swift */; };
+		5D57E6F6280BFDFC0052185F /* HomeViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6E2280BFDFC0052185F /* HomeViewControllerExt.swift */; };
+		5D57E6F7280BFDFC0052185F /* HomeTableViewCellExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6EF280BFDFC0052185F /* HomeTableViewCellExt.swift */; };
+		5D57E6F8280BFDFC0052185F /* StateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6EB280BFDFC0052185F /* StateSpy.swift */; };
+		5D57E6F9280BFDFC0052185F /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6E3280BFDFC0052185F /* XCTestCase+MemoryLeakTracking.swift */; };
+		5D57E6FA280BFDFC0052185F /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6E4280BFDFC0052185F /* UIImage+TestHelpers.swift */; };
+		5D57E6FB280BFDFC0052185F /* StateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6E5280BFDFC0052185F /* StateSpy.swift */; };
+		5D57E6FC280BFDFC0052185F /* HomeViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6EC280BFDFC0052185F /* HomeViewControllerExt.swift */; };
+		5D57E6FD280BFDFC0052185F /* HomeTableViewCellExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6E6280BFDFC0052185F /* HomeTableViewCellExt.swift */; };
+		5D57E6FE280BFDFC0052185F /* UIView+enforceLayoutCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6E9280BFDFC0052185F /* UIView+enforceLayoutCycle.swift */; };
+		5D57E6FF280BFDFC0052185F /* PixaBayRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6E7280BFDFC0052185F /* PixaBayRepositoryStub.swift */; };
+		5D57E700280BFDFC0052185F /* ImageDownloaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E6E8280BFDFC0052185F /* ImageDownloaderStub.swift */; };
+		5D57E702280BFEE60052185F /* StateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E701280BFEE60052185F /* StateSpy.swift */; };
+		5D57E704280BFF130052185F /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57E703280BFF130052185F /* XCTestCase+MemoryLeakTracking.swift */; };
 		5DF8991327F9D57B00649896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8991227F9D57A00649896 /* Main.storyboard */; };
 		5DF8995827FC998E00649896 /* RegistrationRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8995727FC998E00649896 /* RegistrationRepositoryTests.swift */; };
-		5DF8995927FC99FB00649896 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5F0427F9CB370015A818 /* XCTestCase+MemoryLeakTracking.swift */; };
-		5DF8995A27FC9E8900649896 /* StateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D5F0627F9CB370015A818 /* StateSpy.swift */; };
-		5DF8995C27FDC5D200649896 /* RegistrationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8995B27FDC5D200649896 /* RegistrationViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,9 +131,7 @@
 			files = (
 				5D0D5BF227F3898A0015A818 /* RegistrationNetwork.framework in Embed Frameworks */,
 				5D0D5C3627F38B260015A818 /* RegistrationPresentation.framework in Embed Frameworks */,
-				5D0D5D2027F398810015A818 /* Network.framework in Embed Frameworks */,
 				5D0D5D5927F399A70015A818 /* SharedUI.framework in Embed Frameworks */,
-				5D0D5D5C27F399C10015A818 /* Network.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,17 +143,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				5D0D5DAB27F49ECC0015A818 /* RegistrationNetwork.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5D0D5ECE27F9C80D0015A818 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5D0D5ECD27F9C80D0015A818 /* Network.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,18 +199,31 @@
 		5D0D5D5A27F399C10015A818 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0D5DBE27F4A1540015A818 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0D5ECB27F9C80D0015A818 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D0D5EDB27F9CA090015A818 /* LoginUIIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUIIntegrationTests.swift; sourceTree = "<group>"; };
-		5D0D5EDC27F9CA090015A818 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
-		5D0D5EE127F9CA090015A818 /* RegistrationUIIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationUIIntegrationTests.swift; sourceTree = "<group>"; };
-		5D0D5F0227F9CB370015A818 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
-		5D0D5F0327F9CB370015A818 /* URLProtocolStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
-		5D0D5F0427F9CB370015A818 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
-		5D0D5F0527F9CB370015A818 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
-		5D0D5F0627F9CB370015A818 /* StateSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateSpy.swift; sourceTree = "<group>"; };
-		5D0D5F0727F9CB370015A818 /* UIControl+simulateEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+simulateEvent.swift"; sourceTree = "<group>"; };
+		5D57E6C6280BFA650052185F /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D57E6D7280BFDBA0052185F /* RegistrationUIIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationUIIntegrationTests.swift; sourceTree = "<group>"; };
+		5D57E6D8280BFDBA0052185F /* RegistrationViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewModelTests.swift; sourceTree = "<group>"; };
+		5D57E6DA280BFDBA0052185F /* LoginUIIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUIIntegrationTests.swift; sourceTree = "<group>"; };
+		5D57E6DB280BFDBA0052185F /* LoginViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		5D57E6E1280BFDFC0052185F /* UIView+enforceLayoutCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+enforceLayoutCycle.swift"; sourceTree = "<group>"; };
+		5D57E6E2280BFDFC0052185F /* HomeViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerExt.swift; sourceTree = "<group>"; };
+		5D57E6E3280BFDFC0052185F /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		5D57E6E4280BFDFC0052185F /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
+		5D57E6E5280BFDFC0052185F /* StateSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateSpy.swift; sourceTree = "<group>"; };
+		5D57E6E6280BFDFC0052185F /* HomeTableViewCellExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCellExt.swift; sourceTree = "<group>"; };
+		5D57E6E7280BFDFC0052185F /* PixaBayRepositoryStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBayRepositoryStub.swift; sourceTree = "<group>"; };
+		5D57E6E8280BFDFC0052185F /* ImageDownloaderStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloaderStub.swift; sourceTree = "<group>"; };
+		5D57E6E9280BFDFC0052185F /* UIView+enforceLayoutCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+enforceLayoutCycle.swift"; sourceTree = "<group>"; };
+		5D57E6EA280BFDFC0052185F /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
+		5D57E6EB280BFDFC0052185F /* StateSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateSpy.swift; sourceTree = "<group>"; };
+		5D57E6EC280BFDFC0052185F /* HomeViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerExt.swift; sourceTree = "<group>"; };
+		5D57E6ED280BFDFC0052185F /* ImageDownloaderStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloaderStub.swift; sourceTree = "<group>"; };
+		5D57E6EE280BFDFC0052185F /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		5D57E6EF280BFDFC0052185F /* HomeTableViewCellExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCellExt.swift; sourceTree = "<group>"; };
+		5D57E6F0280BFDFC0052185F /* PixaBayRepositoryStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBayRepositoryStub.swift; sourceTree = "<group>"; };
+		5D57E701280BFEE60052185F /* StateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateSpy.swift; sourceTree = "<group>"; };
+		5D57E703280BFF130052185F /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		5DF8991227F9D57A00649896 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5DF8995727FC998E00649896 /* RegistrationRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRepositoryTests.swift; sourceTree = "<group>"; };
-		5DF8995B27FDC5D200649896 /* RegistrationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModelTests.swift; sourceTree = "<group>"; };
 		62F4667CBFFF33BEBBE7A9C9 /* Pods-RegistrationNetwork-RegistrationNetworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegistrationNetwork-RegistrationNetworkTests.release.xcconfig"; path = "Target Support Files/Pods-RegistrationNetwork-RegistrationNetworkTests/Pods-RegistrationNetwork-RegistrationNetworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		64058408AB7845E19C8BBF20 /* Pods-RegistrationNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegistrationNetwork.release.xcconfig"; path = "Target Support Files/Pods-RegistrationNetwork/Pods-RegistrationNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		8A456D402ED05C1308927FBF /* Pods-RegistrationPresentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegistrationPresentation.release.xcconfig"; path = "Target Support Files/Pods-RegistrationPresentation/Pods-RegistrationPresentation.release.xcconfig"; sourceTree = "<group>"; };
@@ -241,8 +246,6 @@
 				5D0D5D5827F399A70015A818 /* SharedUI.framework in Frameworks */,
 				5D0D5BF127F3898A0015A818 /* RegistrationNetwork.framework in Frameworks */,
 				5D0D5C3527F38B260015A818 /* RegistrationPresentation.framework in Frameworks */,
-				5D0D5D1F27F398810015A818 /* Network.framework in Frameworks */,
-				5D0D5D5B27F399C10015A818 /* Network.framework in Frameworks */,
 				473178C64E5A4355C4630A70 /* Pods_Registration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,8 +254,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D57E6C7280BFA650052185F /* Networking.framework in Frameworks */,
 				5C9809D2271D28733D58D971 /* Pods_RegistrationNetwork.framework in Frameworks */,
-				5D0D5ECC27F9C80D0015A818 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +444,8 @@
 		5D0D5BEB27F3898A0015A818 /* RegistrationNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
+				5D57E701280BFEE60052185F /* StateSpy.swift */,
+				5D57E703280BFF130052185F /* XCTestCase+MemoryLeakTracking.swift */,
 				5D0D5BEC27F3898A0015A818 /* RegistrationEndpointsTests.swift */,
 				5DF8995727FC998E00649896 /* RegistrationRepositoryTests.swift */,
 			);
@@ -461,50 +466,61 @@
 		5D0D5C2F27F38B260015A818 /* RegistrationPresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				5D0D5F0127F9CB370015A818 /* Helpers */,
-				5D0D5EDD27F9CA090015A818 /* Registration */,
-				5D0D5EDA27F9CA090015A818 /* Login */,
+				5D57E6E0280BFDFC0052185F /* Helpers */,
+				5D57E6D9280BFDBA0052185F /* Login */,
+				5D57E6D6280BFDBA0052185F /* Registration */,
 			);
 			path = RegistrationPresentationTests;
 			sourceTree = "<group>";
 		};
-		5D0D5EDA27F9CA090015A818 /* Login */ = {
+		5D57E6D6280BFDBA0052185F /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				5D0D5EDB27F9CA090015A818 /* LoginUIIntegrationTests.swift */,
-				5D0D5EDC27F9CA090015A818 /* LoginViewModelTests.swift */,
-			);
-			name = Login;
-			path = ../../../PixaBayAppTests/Login;
-			sourceTree = "<group>";
-		};
-		5D0D5EDD27F9CA090015A818 /* Registration */ = {
-			isa = PBXGroup;
-			children = (
-				5D0D5EE127F9CA090015A818 /* RegistrationUIIntegrationTests.swift */,
-				5DF8995B27FDC5D200649896 /* RegistrationViewModelTests.swift */,
+				5D57E6D7280BFDBA0052185F /* RegistrationUIIntegrationTests.swift */,
+				5D57E6D8280BFDBA0052185F /* RegistrationViewModelTests.swift */,
 			);
 			name = Registration;
 			path = ../../../PixaBayAppTests/Registration;
 			sourceTree = "<group>";
 		};
-		5D0D5F0127F9CB370015A818 /* Helpers */ = {
+		5D57E6D9280BFDBA0052185F /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				5D0D5F0227F9CB370015A818 /* SharedTestHelpers.swift */,
-				5D0D5F0327F9CB370015A818 /* URLProtocolStub.swift */,
-				5D0D5F0427F9CB370015A818 /* XCTestCase+MemoryLeakTracking.swift */,
-				5D0D5F0527F9CB370015A818 /* UIImage+TestHelpers.swift */,
-				5D0D5F0627F9CB370015A818 /* StateSpy.swift */,
-				5D0D5F0727F9CB370015A818 /* UIControl+simulateEvent.swift */,
+				5D57E6DA280BFDBA0052185F /* LoginUIIntegrationTests.swift */,
+				5D57E6DB280BFDBA0052185F /* LoginViewModelTests.swift */,
+			);
+			name = Login;
+			path = ../../../PixaBayAppTests/Login;
+			sourceTree = "<group>";
+		};
+		5D57E6E0280BFDFC0052185F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5D57E6EE280BFDFC0052185F /* XCTestCase+MemoryLeakTracking.swift */,
+				5D57E6ED280BFDFC0052185F /* ImageDownloaderStub.swift */,
+				5D57E6E1280BFDFC0052185F /* UIView+enforceLayoutCycle.swift */,
+				5D57E6F0280BFDFC0052185F /* PixaBayRepositoryStub.swift */,
+				5D57E6EA280BFDFC0052185F /* UIImage+TestHelpers.swift */,
+				5D57E6E2280BFDFC0052185F /* HomeViewControllerExt.swift */,
+				5D57E6EF280BFDFC0052185F /* HomeTableViewCellExt.swift */,
+				5D57E6EB280BFDFC0052185F /* StateSpy.swift */,
+				5D57E6E3280BFDFC0052185F /* XCTestCase+MemoryLeakTracking.swift */,
+				5D57E6E4280BFDFC0052185F /* UIImage+TestHelpers.swift */,
+				5D57E6E5280BFDFC0052185F /* StateSpy.swift */,
+				5D57E6EC280BFDFC0052185F /* HomeViewControllerExt.swift */,
+				5D57E6E6280BFDFC0052185F /* HomeTableViewCellExt.swift */,
+				5D57E6E9280BFDFC0052185F /* UIView+enforceLayoutCycle.swift */,
+				5D57E6E7280BFDFC0052185F /* PixaBayRepositoryStub.swift */,
+				5D57E6E8280BFDFC0052185F /* ImageDownloaderStub.swift */,
 			);
 			name = Helpers;
-			path = ../../../SharedUITests/Helpers;
+			path = ../../Home/HomePresentationTests/Helpers;
 			sourceTree = "<group>";
 		};
 		683B456041B62B0140F7CC66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D57E6C6280BFA650052185F /* Networking.framework */,
 				5D0D5ECB27F9C80D0015A818 /* Network.framework */,
 				5D0D5DBE27F4A1540015A818 /* Network.framework */,
 				5D0D5D5A27F399C10015A818 /* Network.framework */,
@@ -572,7 +588,6 @@
 				5D0D5BDA27F389890015A818 /* Sources */,
 				5D0D5BDB27F389890015A818 /* Frameworks */,
 				5D0D5BDC27F389890015A818 /* Resources */,
-				5D0D5ECE27F9C80D0015A818 /* Embed Frameworks */,
 				5DB8EEF92804B28C003A1F70 /* CopyFiles */,
 				5DB8EEFA2804B292003A1F70 /* ShellScript */,
 			);
@@ -985,9 +1000,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF8995827FC998E00649896 /* RegistrationRepositoryTests.swift in Sources */,
+				5D57E704280BFF130052185F /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				5D0D5BED27F3898A0015A818 /* RegistrationEndpointsTests.swift in Sources */,
-				5DF8995A27FC9E8900649896 /* StateSpy.swift in Sources */,
-				5DF8995927FC99FB00649896 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				5D57E702280BFEE60052185F /* StateSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1011,16 +1026,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DF8995C27FDC5D200649896 /* RegistrationViewModelTests.swift in Sources */,
-				5D0D5EE527F9CA090015A818 /* LoginViewModelTests.swift in Sources */,
-				5D0D5F0C27F9CB3A0015A818 /* StateSpy.swift in Sources */,
-				5D0D5EE227F9CA090015A818 /* LoginUIIntegrationTests.swift in Sources */,
-				5D0D5F0927F9CB3A0015A818 /* URLProtocolStub.swift in Sources */,
-				5D0D5F0D27F9CB3A0015A818 /* UIControl+simulateEvent.swift in Sources */,
-				5D0D5F0827F9CB3A0015A818 /* SharedTestHelpers.swift in Sources */,
-				5D0D5EE627F9CA090015A818 /* RegistrationUIIntegrationTests.swift in Sources */,
-				5D0D5F0B27F9CB3A0015A818 /* UIImage+TestHelpers.swift in Sources */,
-				5D0D5F0A27F9CB3A0015A818 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				5D57E6DD280BFDBA0052185F /* RegistrationViewModelTests.swift in Sources */,
+				5D57E6F3280BFDFC0052185F /* UIView+enforceLayoutCycle.swift in Sources */,
+				5D57E6FF280BFDFC0052185F /* PixaBayRepositoryStub.swift in Sources */,
+				5D57E6F8280BFDFC0052185F /* StateSpy.swift in Sources */,
+				5D57E6FA280BFDFC0052185F /* UIImage+TestHelpers.swift in Sources */,
+				5D57E6F5280BFDFC0052185F /* UIImage+TestHelpers.swift in Sources */,
+				5D57E6F4280BFDFC0052185F /* PixaBayRepositoryStub.swift in Sources */,
+				5D57E6F9280BFDFC0052185F /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				5D57E700280BFDFC0052185F /* ImageDownloaderStub.swift in Sources */,
+				5D57E6DF280BFDBA0052185F /* LoginViewModelTests.swift in Sources */,
+				5D57E6FD280BFDFC0052185F /* HomeTableViewCellExt.swift in Sources */,
+				5D57E6F6280BFDFC0052185F /* HomeViewControllerExt.swift in Sources */,
+				5D57E6F2280BFDFC0052185F /* ImageDownloaderStub.swift in Sources */,
+				5D57E6DE280BFDBA0052185F /* LoginUIIntegrationTests.swift in Sources */,
+				5D57E6F7280BFDFC0052185F /* HomeTableViewCellExt.swift in Sources */,
+				5D57E6DC280BFDBA0052185F /* RegistrationUIIntegrationTests.swift in Sources */,
+				5D57E6FE280BFDFC0052185F /* UIView+enforceLayoutCycle.swift in Sources */,
+				5D57E6F1280BFDFC0052185F /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				5D57E6FB280BFDFC0052185F /* StateSpy.swift in Sources */,
+				5D57E6FC280BFDFC0052185F /* HomeViewControllerExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

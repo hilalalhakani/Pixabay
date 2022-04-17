@@ -180,16 +180,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D0D5E6727F9C5EB0015A818"
-               BuildableName = "NetworkTests.xctest"
-               BlueprintName = "NetworkTests"
-               ReferencedContainer = "container:PixaBayApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "5D0D5BE427F3898A0015A818"
                BuildableName = "RegistrationNetworkTests.xctest"
                BlueprintName = "RegistrationNetworkTests"
@@ -216,6 +206,16 @@
                ReferencedContainer = "container:PixaBayApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D57E698280BF96A0052185F"
+               BuildableName = "NetworkingTests.xctest"
+               BlueprintName = "NetworkingTests"
+               ReferencedContainer = "container:PixaBayApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -235,6 +235,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5D5220DC27D560D3008D5930"
+            BuildableName = "PixaBayAppTests.xctest"
+            BlueprintName = "PixaBayAppTests"
+            ReferencedContainer = "container:PixaBayApp.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

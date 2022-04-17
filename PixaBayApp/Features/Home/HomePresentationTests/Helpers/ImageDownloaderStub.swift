@@ -8,7 +8,7 @@
 import Foundation
 import RxCocoa
 import RxSwift
-import Network
+import Networking
 import XCTest
 
 class ImageDownloaderStub: ImageDownloader

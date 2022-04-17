@@ -7,7 +7,7 @@
 
 import Foundation
 import RxSwift
-import Network
+import Networking
 
 public protocol UserRepository {
 	func login(request: LoginRequest) -> Observable<LoginResponse>

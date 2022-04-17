@@ -33,9 +33,9 @@ target 'PixaBayAppTests' do
 end
 
 #MARK: Network
-target 'Network' do
+target 'Networking' do
   networkPods
-  target 'NetworkTests' do
+  target 'NetworkingTests' do
     pod 'RxBlocking'
     networkPods
   end

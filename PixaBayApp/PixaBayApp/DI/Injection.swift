@@ -7,7 +7,7 @@
 
 import Foundation
 import Resolver
-import Network
+import Networking
 import HomeNetwork
 import HomePresentation
 import RegistrationNetwork

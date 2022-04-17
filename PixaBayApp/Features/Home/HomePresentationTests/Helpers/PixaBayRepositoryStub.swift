@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 import HomeNetwork
-import Network
+import Networking
 class PixaBayRepositoryStub: PixaBayRepository
 {
 	let feedsSubject = PublishSubject<FeedsResponse>()

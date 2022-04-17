@@ -7,7 +7,7 @@
 
 import XCTest
 import RxSwift
-import Network
+import Networking
 import RegistrationNetwork
 
 @testable import Registration

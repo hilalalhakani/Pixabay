@@ -10,7 +10,7 @@ import HomeNetwork
 import RxSwift
 import RxCocoa
 import RxDataSources
-import Network
+import Networking
 import RxSwiftExt
 
 public class HomeViewModel

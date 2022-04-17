@@ -12,7 +12,7 @@ import RxCocoa
 import HomeDetailsPresentation
 import HomeNetwork
 import SharedUI
-import Network
+import Networking
 
 class ImageDetailsSnapshotTests: XCTestCase {
 	func test_ImageDetails() {

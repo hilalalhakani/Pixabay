@@ -8,7 +8,7 @@
 import UIKit
 import HomeDetailsPresentation
 import HomeNetwork
-import Network
+import Networking
 import RxSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

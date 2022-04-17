@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5D0D5E6027F9C5EB0015A818"
-            BuildableName = "Network.framework"
+            BuildableName = "Networking.framework"
             BlueprintName = "Network"
             ReferencedContainer = "container:PixaBayApp.xcodeproj">
          </BuildableReference>

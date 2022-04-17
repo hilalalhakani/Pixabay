@@ -12,7 +12,7 @@ import HomeNetwork
 import RxSwift
 import RxCocoa
 import SharedUI
-import Network
+import Networking
 
 class HomeSnapshotTests: XCTestCase {
 	func test_emptyHome() {

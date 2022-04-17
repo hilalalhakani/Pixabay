@@ -24,8 +24,6 @@
 		5DB8EEC628045CA1003A1F70 /* ImageDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8EEC12804590E003A1F70 /* ImageDetailsViewModel.swift */; };
 		5DB8EED328046553003A1F70 /* HomeNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB8EED228046553003A1F70 /* HomeNetwork.framework */; };
 		5DB8EED428046553003A1F70 /* HomeNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB8EED228046553003A1F70 /* HomeNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5DB8EED72804656A003A1F70 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB8EED62804656A003A1F70 /* Network.framework */; };
-		5DB8EED82804656A003A1F70 /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB8EED62804656A003A1F70 /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5DB8EEDD28047581003A1F70 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8EEDC28047581003A1F70 /* UIImage+TestHelpers.swift */; };
 		7004CF8AEA1456D0DC969E50 /* Pods_HomeDetailsPresentation_HomeDetailsPresentationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C24AFAC1C3491200A7CE2FA4 /* Pods_HomeDetailsPresentation_HomeDetailsPresentationTests.framework */; };
 		92FADC8CF7C527C7DA471F2E /* Pods_HomeDetailsPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F37F07083914558E5730E46 /* Pods_HomeDetailsPresentation.framework */; };
@@ -82,7 +80,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				5DB8EED428046553003A1F70 /* HomeNetwork.framework in Embed Frameworks */,
-				5DB8EED82804656A003A1F70 /* Network.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,7 +141,6 @@
 			files = (
 				5DB8EED328046553003A1F70 /* HomeNetwork.framework in Frameworks */,
 				92FADC8CF7C527C7DA471F2E /* Pods_HomeDetailsPresentation.framework in Frameworks */,
-				5DB8EED72804656A003A1F70 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

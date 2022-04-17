@@ -7,7 +7,7 @@
 
 import Foundation
 import RxSwift
-import Network
+import Networking
 
 public protocol PixaBayRepository {
 	func getFeeds() -> Observable<FeedsResponse>

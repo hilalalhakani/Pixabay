@@ -4,7 +4,7 @@
 //
 //  Created by Pinpay Graphic on 16/10/2021.
 //
-import Network
+import Networking
 import RxCocoa
 import RxSwift
 import UIKit

@@ -22,8 +22,7 @@
 		5D0D5C9527F38EA20015A818 /* HomePresentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D5C8727F38EA20015A818 /* HomePresentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D0D5C9827F38EA20015A818 /* HomePresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5C8527F38EA10015A818 /* HomePresentation.framework */; };
 		5D0D5C9927F38EA20015A818 /* HomePresentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5C8527F38EA10015A818 /* HomePresentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D0D5ED127F9C84A0015A818 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5ED027F9C84A0015A818 /* Network.framework */; };
-		5D0D5ED227F9C84A0015A818 /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D5ED027F9C84A0015A818 /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D57E6C5280BFA4F0052185F /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D57E6C4280BFA4F0052185F /* Networking.framework */; };
 		5DB8EEE228048421003A1F70 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8EEE128048421003A1F70 /* UIImage+TestHelpers.swift */; };
 		5DBCD14627FDED52000B2181 /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBCD14527FDED52000B2181 /* SharedUI.framework */; };
 		5DBCD14727FDED52000B2181 /* SharedUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBCD14527FDED52000B2181 /* SharedUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -124,7 +123,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5D0D5ED227F9C84A0015A818 /* Network.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +164,7 @@
 		5D0D5C8C27F38EA20015A818 /* HomePresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomePresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0D5C9327F38EA20015A818 /* HomeUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIIntegrationTests.swift; sourceTree = "<group>"; };
 		5D0D5ED027F9C84A0015A818 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D57E6C4280BFA4F0052185F /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB8EEE128048421003A1F70 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 		5DBCD14527FDED52000B2181 /* SharedUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBCD14927FE30A4000B2181 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -210,7 +209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D0D5ED127F9C84A0015A818 /* Network.framework in Frameworks */,
+				5D57E6C5280BFA4F0052185F /* Networking.framework in Frameworks */,
 				947D3473493114173A6F274C /* Pods_HomePresentation_HomeNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +329,7 @@
 		5D0D5ECF27F9C84A0015A818 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D57E6C4280BFA4F0052185F /* Networking.framework */,
 				5DBCD14527FDED52000B2181 /* SharedUI.framework */,
 				5DF8997527FDEBA800649896 /* Network.framework */,
 				5D0D5ED027F9C84A0015A818 /* Network.framework */,

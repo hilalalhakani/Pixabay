@@ -8,7 +8,7 @@
 import XCTest
 import HomePresentation
 import HomeNetwork
-import Network
+import Networking
 import RxSwift
 import RxCocoa
 

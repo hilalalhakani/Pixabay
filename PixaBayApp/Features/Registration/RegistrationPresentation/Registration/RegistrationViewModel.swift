@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Network
+import Networking
 import RxCocoa
 import RxSwift
 import RegistrationNetwork

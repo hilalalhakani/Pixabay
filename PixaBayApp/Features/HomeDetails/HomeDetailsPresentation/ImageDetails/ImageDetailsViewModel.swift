@@ -10,7 +10,7 @@ import HomeNetwork
 import RxSwift
 import UIKit
 import RxCocoa
-import Network
+import Networking
 import SharedUI
 
 public class ImageDetailsViewModel {

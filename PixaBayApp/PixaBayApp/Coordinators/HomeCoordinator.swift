@@ -13,7 +13,7 @@ import Resolver
 import RxSwift
 import RxCocoa
 import HomeDetailsPresentation
-import Network
+import Networking
 
 class HomeCoordinator: Coordinator, ReactiveCompatible {
 	private weak var parentCoordinator: MainCoordinator?
