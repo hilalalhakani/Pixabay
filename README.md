@@ -15,10 +15,9 @@ The navigation is handled by a coordinator. It is responsable to remove navigati
 i created a Framework for the Network ,to seperate the network api requests  from the main app  so i could be able to use it for other targets
 the APIResponse is internal and inherits Decodable and mapped into a DomainObject, so any change to the BackendResponse requires only a change in the ToDomain function instead of changing the object in the whole app
 
-the DI Container resolves the HTTPClient to the URLSessionHTTPClient and the repositories to their corresponding objects . the host URL is injected so i could be able to change it when the environment changes (DEV-UAT-PROD).
-
-I used a WeakRef Object instead of using weak instances for the coordinator,which helped me test the behavior (for example using a SpyCoordinator) and as well as extracting the memory management away from the viewController 
-
+the DI Container resolves the HTTPClient to the URLSessionHTTPClient and the repositories to their corresponding objects .  
+ 
+ 
 ## Third-party Libraries
  
 Resolver https://github.com/hmlongco/Resolver
