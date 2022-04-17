@@ -1,0 +1,26 @@
+name: iOS starter workflow
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+           xcodebuild test-without-building -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build-and-test"
+  build-and-test:
+    # The type of runner that the job will run on
+    runs-on: macos-11
+
+     # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_13.2.1.app
+            
+    - name: Build and Test
+      run: xcodebuild test -workspace PixaBayApp/PixaBay.xcworkspace -scheme "CI" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11,OS=15.2" ONLY_ACTIVE_ARCH=YES SWIFT_TREAT_WARNINGS_AS_ERRORS=YES OTHER_SWIFT_FLAGS="-D ED_SKIP_SWIFT_FORMAT"
