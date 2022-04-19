@@ -2,7 +2,7 @@
 # PixaBay
 [![Platform](https://img.shields.io/cocoapods/p/DLAutoSlidePageViewController.svg?style=flat)]()
 [![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg?style=flat)](https://developer.apple.com/swift/)
-[![iOS starter workflow](https://github.com/hilalalhakani/Pixabay/actions/workflows/ios.yml/badge.svg)](https://github.com/hilalalhakani/Pixabay/actions/workflows/ios.yml)
+<img src="https://github.com/hilalalhakani/Pixabay/workflows/CI/badge.svg">
 
 ## Screenshots
 
@@ -12,35 +12,37 @@
 The architecture used to build PixaBay app is MVVM, with helping hands from RxSwift. 
 The navigation is handled by a coordinator. It is responsable to remove navigation logic from each view and have them all in just one place. 
 
-i created a Framework for the Network ,to seperate the network api requests  from the main app  so i could be able to use it for other targets
-the APIResponse is internal and inherits Decodable and mapped into a DomainObject, so any change to the BackendResponse requires only a change in the ToDomain function instead of changing the object in the whole app
+i created a project for each feature which has 2 frameworks:
+1. Presentation: which contains all the iOS files and views 
+2. Network: Which contains the api endpoints 
+3. Cache can be added as well or other frameworks but in this project it wasn't needed 
 
-the DI Container resolves the HTTPClient to the URLSessionHTTPClient and the repositories to their corresponding objects . the host URL is injected so i could be able to change it when the environment changes (DEV-UAT-PROD).
+each feature can be selected as a target and ran on the simulator 
 
-I used a WeakRef Object instead of using weak instances for the coordinator,which helped me test the behavior (for example using a SpyCoordinator) and as well as extracting the memory management away from the viewController 
-
+the DI Container resolves the HTTPClient to the URLSessionHTTPClient and the repositories to their corresponding objects .  
+ 
+ 
 ## Third-party Libraries
  
-Resolver https://github.com/hmlongco/Resolver
-Dependency injection framework for Swift.
+[Resolver](https://github.com/hmlongco/Resolver) Dependency injection framework for Swift.
 
-SVProgressHUD (https://github.com/SVProgressHUD/SVProgressHUD)
-Loader Animation 
+[SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD) Loader Animation 
 
-AJMessage (https://github.com/ajijoyo/AJMessage)
-View To display Error Messages
+[AJMessage](https://github.com/ajijoyo/AJMessage) View To display Error Messages
+
+## References 
+ 1. [Essential Developer](https://www.essentialdeveloper.com/) youtube channel and course 
+ 2. [danielt1263](https://github.com/danielt1263?tab=repositories) repositories 
 
 # Views Overview
-All views are done in storyboards, 
+All views are created using storyboards where they are instantiated using a decoder and a viewModel 
 <details>
   <summary>Login</summary>
 
-
-The Login View has 2 fields (Email and Password) which both inherit `ErrorTextField`,`TextFieldRule` where each once has it owns `Validationpolicy` and when it's valid the `errorLabel` appears and when it's not it becomes Hidden 
-when Both TextField Are Valid the `LoginButton` is enabled 
+The Login View has 2 fields (Email and Password) which both inherit `ErrorTextField`,`TextFieldRule` where each once has it owns Validation policy and when it's valid the `errorLabel` appears and when it's not it becomes Hidden 
+when Both TextField Are Valid the `LoginButton` becomes enabled 
 
 The `LoginViewModel` handles the state of each textfield , and has an injected `UserRepository` that contains all the requests for the Registration, 
-the `LoginResponseSubject` acts as a trigger to notify the view that a response has been received . 
 The Correct credentials are **test@mail.com** and **123456**
  
 The ScrollView bottom insets is Binded to the `KeyboardHeight`
@@ -64,19 +66,15 @@ it's similar to the login screen in terms of validation , Loading behavior and a
 
 
 The HomeView contains Images downloaded From pixabay. 
-I didn't use `SDWebImage` to download the images , instead i created a `HitImageCellController` that contains a reference to the cell and Handles the image download ,  
 Instead of waiting to scroll to load the images i `preload` them in advance, and if the cell has ended Displaying i cancel the download or `cancelPrefetchingForRowsAt` has been called
-Keeping large images in memory will result in a heavy usage of Ram , so i saved them in the `Documents` folder and load them according to the id .
 
 </details>
 
 <details>
   <summary>Network</summary>
 
-I created a `UserRepositroy` and `Pixabay Repository` which contain an injected `HTTPClient` that uses `URLSession` where they contains the Login and Registration  Calls and downloadImage API requests .
 The mapping is done in the `ResponseMapper` where it has an injected `DecodedType` which is the Decodable object , `URLResponse` and `Data` 
 if the status code isn't `200`, the api error is returned with a custom message according to the response status code. 
-
 
 </details>
 
@@ -110,7 +108,7 @@ for each view.
 
 Assert That the injected ViewModelValues are the same as the ImageDetails Label Text
 
-#### HomeView:  **Incomplete**
+#### HomeView:
 
      1)`RefreshControl` is Visible and Refreshing on start
      2)on Refresh the viewModel calls the Repository to getData (Using a repositorySpy to observe that the call has been made)
