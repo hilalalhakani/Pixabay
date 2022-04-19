@@ -7,13 +7,4 @@
    <FileRef
       location = "group:PixaBayApp.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Features/Home/Home.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Features/HomeDetails/HomeDetails.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Features/Registration/Registration.xcodeproj">
-   </FileRef>
 </Workspace>

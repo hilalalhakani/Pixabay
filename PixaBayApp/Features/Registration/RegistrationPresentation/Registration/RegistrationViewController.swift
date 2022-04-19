@@ -56,6 +56,7 @@ public class RegistrationViewController: UIViewController, Storyboarded {
 		Observable.combineLatest(emailTextField.isValid, passTextField.isValid, ageTextField.isValid)
 			.map { $0.0 && $0.1 && $0.2 }
 			.asDriver(onErrorDriveWith: .empty())
+			.startWith(false)
 			.drive(signUpButton.rx.isEnabled)
 			.disposed(by: disposeBag)
 

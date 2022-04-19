@@ -48,6 +48,7 @@ extension LoginViewController {
 	private func setupBinding() {
 		Observable.combineLatest(emailTextField.isValid, passTextField.isValid)
 			.map { $0.0 && $0.1 }
+			.startWith(false)
 			.bind(to: loginButton.rx.isEnabled)
 			.disposed(by: disposeBag)
 
