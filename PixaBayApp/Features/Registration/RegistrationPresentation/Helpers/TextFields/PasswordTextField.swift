@@ -17,6 +17,9 @@ public class PasswordTextField: ErrorTextField {
 		errorLabel.text = errorMessage
 		keyboardType = .default
 		isSecureTextEntry = true
+		self.isValid
+			.bind(to: self.errorLabel.rx.isHidden)
+			.disposed(by: self.disposeBag)
 	}
 }
 
@@ -27,6 +30,7 @@ extension PasswordTextField: TextFieldRule {
 
 	var isValid: Observable<Bool> {
 		rx.text.orEmpty
+			.skip(1)
 			.map {
 				let textCount = $0.count
 				return (textCount >= 6 && textCount <= 12)
